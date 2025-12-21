@@ -1,27 +1,52 @@
-# Git - 0 to Pro Reference
+<div align="center">
 
-**By:** [supersimple.dev](https://supersimple.dev)  
-**Tutorial link:** [https://www.youtube.com/watch?v=hrTQipWp6co](https://www.youtube.com/watch?v=hrTQipWp6co)
+# 🚀 Git - 0 to Pro Reference
+
+[![Tutorial](https://img.shields.io/badge/YouTube-Tutorial-red?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=hrTQipWp6co)
+[![Author](https://img.shields.io/badge/By-supersimple.dev-blue?style=for-the-badge)](https://supersimple.dev)
+[![Git](https://img.shields.io/badge/Git-Reference-orange?style=for-the-badge&logo=git)](https://git-scm.com/)
+
+_A comprehensive guide to master Git from beginner to pro_
+
+</div>
 
 ---
 
-## Command Line (Terminal / PowerShell)
+## 📑 Table of Contents
+
+- [💻 Command Line Basics](#-command-line-basics)
+- [📝 Creating Commits](#-creating-commits)
+- [🔄 Working Area vs Staging Area](#-working-area-vs-staging-area)
+- [👀 Viewing Previous Commits](#-viewing-previous-commits)
+- [⏮️ Restoring to a Previous Commit](#️-restoring-to-a-previous-commit)
+- [⚙️ Other Features](#️-other-features)
+- [🌐 GitHub](#-github)
+- [⬆️ Uploading Code to GitHub](#️-uploading-code-to-github)
+- [⬇️ Downloading Code from GitHub](#️-downloading-code-from-github)
+- [🌿 Branching](#-branching)
+- [🔀 Merging](#-merging)
+- [⚠️ Merge Conflicts](#️-merge-conflicts)
+- [🚀 Feature Branch Workflow](#-feature-branch-workflow)
+
+---
+
+## 💻 Command Line Basics
 
 | Command               | Description                                           |
 | --------------------- | ----------------------------------------------------- |
 | `ls`                  | List the files and folders in the current folder      |
 | `cd ~/Desktop/folder` | Change the folder that the command line is running in |
 
-> **Note:** Git commands must be run inside the folder that contains all the code.
+> **💡 Note:** Git commands must be run inside the folder that contains all the code.
 
 ---
 
-## Creating Commits
+## 📝 Creating Commits
 
 In Git:
 
-- **Version** = commit
-- **Version history** = commit history
+- ✅ **Version** = commit
+- 📚 **Version history** = commit history
 
 | Command                           | Description                                               |
 | --------------------------------- | --------------------------------------------------------- |
@@ -37,7 +62,7 @@ In Git:
 | `git log --all`                   | Show all commits (not just current branch)                |
 | `git log --all --graph`           | Show branching visually in the command line               |
 
-### Configure Name & Email for Commits
+### ⚙️ Configure Name & Email for Commits
 
 ```bash
 git config --global user.name "Your Name"
@@ -46,10 +71,10 @@ git config --global user.email "email@example.com"
 
 ---
 
-## Working Area vs Staging Area
+## 🔄 Working Area vs Staging Area
 
-- **Working Area** = contains changes that start in the working area
-- **Staging Area** = contains changes that will go into the next commit
+- 📂 **Working Area** = contains changes that start in the working area
+- 🎯 **Staging Area** = contains changes that will go into the next commit
 
 ```
 working => staging:     git add .
@@ -58,7 +83,7 @@ staging => working:     git reset <file|folder>
 working => remove:      git checkout -- <file|folder>
 ```
 
-### Common Commands
+### 🛠️ Common Commands
 
 | Command                          | Description                            |
 | -------------------------------- | -------------------------------------- |
@@ -73,22 +98,22 @@ working => remove:      git checkout -- <file|folder>
 
 ---
 
-## Viewing Previous Commits
+## 👀 Viewing Previous Commits
 
 ```bash
 git checkout <commit_hash|branch_name>
 ```
 
-**Key Concepts:**
+**🔑 Key Concepts:**
 
-- **`master`** = branch name
+- 🌳 **`master`** = branch name
   1. You can `git checkout` branch
   2. Always points to latest commit on the branch
-- **`HEAD`** = indicates which commit you are currently viewing
+- 👉 **`HEAD`** = indicates which commit you are currently viewing
 
 ---
 
-## Restoring to a Previous Commit
+## ⏮️ Restoring to a Previous Commit
 
 | Command                                      | Description                                             |
 | -------------------------------------------- | ------------------------------------------------------- |
@@ -99,9 +124,9 @@ git checkout <commit_hash|branch_name>
 
 ---
 
-## Other Features of Git
+## ⚙️ Other Features of Git
 
-### Create Aliases (Shortcuts)
+### 🔖 Create Aliases (Shortcuts)
 
 ```bash
 git config --global alias.shortcut <command>
@@ -109,11 +134,11 @@ git config --global alias.s "status"
 # Now: git s = git status
 ```
 
-### .gitignore
+### 🚫 .gitignore
 
 Tell git which files/folders it SHOULD NOT track.
 
-### Remove Git from Project
+### 🗑️ Remove Git from Project
 
 ```bash
 rm -rf .git
@@ -121,26 +146,26 @@ rm -rf .git
 
 ---
 
-## GitHub
+## 🌐 GitHub
 
-**Repository** = a folder containing code where any changes to the code are tracked by git.  
+**📦 Repository** = a folder containing code where any changes to the code are tracked by git.  
 (To create a repository, we create a new folder on our computer, and then run `git init`)
 
-**GitHub** = a service that lets us save our git repositories online. It also helps us:
+**🌐 GitHub** = a service that lets us save our git repositories online. It also helps us:
 
-- Backup our code in case we delete it on our computer
-- See the history of our code changes more easily
+- 💾 Backup our code in case we delete it on our computer
+- 📊 See the history of our code changes more easily
 
-> Alternatives include Bitbucket and GitLab
+> 💡 **Alternatives include:** Bitbucket and GitLab
 
-- **Local repository** = a git repository saved on our computer
-- **Remote repository** = a git repository saved online (for example on GitHub)
+- 💻 **Local repository** = a git repository saved on our computer
+- ☁️ **Remote repository** = a git repository saved online (for example on GitHub)
 
 ---
 
-## Uploading Code to GitHub
+## ⬆️ Uploading Code to GitHub
 
-### Linking to a Remote Repository
+### 🔗 Linking to a Remote Repository
 
 ```bash
 git remote add <remote_name> <url>
@@ -156,7 +181,7 @@ git remote add origin https://github.com/SuperSimpleDev/repository1
 
 The above command links a local repository to a GitHub repository and gives it a name "origin".
 
-### Managing Remote Repositories
+### 🔧 Managing Remote Repositories
 
 | Command                           | Description                                              |
 | --------------------------------- | -------------------------------------------------------- |
@@ -165,7 +190,7 @@ The above command links a local repository to a GitHub repository and gives it a
 | `git remote remove <remote_name>` | Removes a link to a remote repository                    |
 | `git remote remove origin`        | Removes the link to the remote repository named "origin" |
 
-### Configure GitHub Username
+### 👤 Configure GitHub Username
 
 ```bash
 git config --global credential.username <username>
@@ -173,7 +198,7 @@ git config --global credential.username <username>
 
 Configure your GitHub username so you can get access to your Github repository.
 
-### Pushing to GitHub
+### 📤 Pushing to GitHub
 
 | Command                           | Description                                                           |
 | --------------------------------- | --------------------------------------------------------------------- |
@@ -182,7 +207,7 @@ Configure your GitHub username so you can get access to your Github repository.
 | `git log --all --graph`           | Shows the branches visually in the history                            |
 | `git push origin main`            | Upload the branch "main" to the remote repository named "origin"      |
 
-#### Set Upstream (Shortcut)
+#### 🔗 Set Upstream (Shortcut)
 
 ```bash
 git push <remote_name> <branch> --set-upstream
@@ -191,7 +216,7 @@ git push origin main --set-upstream
 
 Sets up a shortcut for this branch and remote repository. Next time you are on the `main` branch and you run `git push`, it will automatically push the `main` branch to `origin`.
 
-#### Force Push
+#### ⚠️ Force Push
 
 ```bash
 git push <remote_name> <branch> -f
@@ -201,9 +226,9 @@ Force-push the branch to the remote repository (it will overwrite what's on the 
 
 ---
 
-## Downloading Code from GitHub
+## ⬇️ Downloading Code from GitHub
 
-### Cloning a Repository
+### 📥 Cloning a Repository
 
 ```bash
 git clone <url>
@@ -213,7 +238,7 @@ git clone https://github.com/SuperSimpleDev/repository1
 git clone <url> <folder_name>
 ```
 
-### Fetching and Pulling Updates
+### 🔄 Fetching and Pulling Updates
 
 | Command                           | Description                                                                                                                                  |
 | --------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -221,7 +246,7 @@ git clone <url> <folder_name>
 | `git pull <remote_name> <branch>` | Update the local branch with any updates from the remote repository (on GitHub)                                                              |
 | `git pull origin main`            | Downloads any new commits from the `main` branch on `origin`, and updates the local `main` branch with those new commits                     |
 
-#### Set Upstream for Pull
+#### 🔗 Set Upstream for Pull
 
 ```bash
 git pull origin main --set-upstream
@@ -231,9 +256,9 @@ Sets up a shortcut so that the next time you are on the `main` branch and run `g
 
 ---
 
-## Branching
+## 🌿 Branching
 
-**Branching** = create a copy of the version history that we can work on without affecting the original version history. This lets us work on multiple things (features + fixes) at the same time.
+**🌿 Branching** = create a copy of the version history that we can work on without affecting the original version history. This lets us work on multiple things (features + fixes) at the same time.
 
 | Command                       | Description                                                                             |
 | ----------------------------- | --------------------------------------------------------------------------------------- |
@@ -244,13 +269,13 @@ Sets up a shortcut so that the next time you are on the `main` branch and run `g
 | `git branch -D <branch_name>` | Deletes a branch                                                                        |
 | `git branch -D feature1`      | Deletes the `feature1` branch                                                           |
 
-**HEAD** = points to which branch we are currently working on
+**👉 HEAD** = points to which branch we are currently working on
 
 `HEAD -> feature1` = we are currently working on the `feature1` branch. Any new commits will be added to the `feature1` branch.
 
 ---
 
-## Merging
+## 🔀 Merging
 
 ```bash
 git merge <branch_name> -m "message"
@@ -270,7 +295,7 @@ git merge feature1 -m "message"
 
 ---
 
-## Merge Conflicts
+## ⚠️ Merge Conflicts
 
 If there is a merge conflict (git doesn't know what the final code should be), it will add this in your code:
 
@@ -285,7 +310,7 @@ code2
 - Code between `<<<<<<< HEAD` and `=======` is from the current branch (indicated by `HEAD ->`)
 - Code between `=======` and `>>>>>>> branch` is from the branch being merged
 
-### Resolving a Merge Conflict
+### 🔧 Resolving a Merge Conflict
 
 1. **Delete all the extra code and just leave the final code that you want:**
 
@@ -310,11 +335,11 @@ git commit -m "message"
 
 ---
 
-## Feature Branch Workflow
+## 🚀 Feature Branch Workflow
 
 A popular process that companies use when adding new features to their software.
 
-### 1. Create a Feature Branch
+### 1️⃣ Create a Feature Branch
 
 ```bash
 git branch new-feature
@@ -325,21 +350,21 @@ git add .
 git commit -m "new feature message"
 ```
 
-### 2. Upload the Feature Branch to GitHub
+### 2️⃣ Upload the Feature Branch to GitHub
 
 ```bash
 git push origin new-feature
 ```
 
-### 3. Create a Pull Request on GitHub
+### 3️⃣ Create a Pull Request on GitHub
 
 A pull request lets teammates do code reviews and add comments.
 
-### 4. Merge the Feature Branch
+### 4️⃣ Merge the Feature Branch
 
 Merge the feature branch into the main branch by opening the pull request in the browser and clicking "Merge pull request".
 
-### 5. Update the Local Repository
+### 5️⃣ Update the Local Repository
 
 After merging, update the local repository so that it stays in sync with the remote repository on GitHub.
 
@@ -350,7 +375,7 @@ git pull origin main
 
 ---
 
-## Merge Conflicts in the Feature Branch Workflow
+## ⚠️ Merge Conflicts in the Feature Branch Workflow
 
 A merge conflict can happen if 2 or more pull requests change the same file and the same line.
 
@@ -359,23 +384,23 @@ We can either:
 1. Resolve the merge conflict on GitHub
 2. Resolve the merge conflict on our computer
 
-### Resolving Merge Conflicts on Your Computer
+### 🔧 Resolving Merge Conflicts on Your Computer
 
-**1) Get the latest updates from `main`:**
+**1️⃣ Get the latest updates from `main`:**
 
 ```bash
 git checkout main
 git pull origin main
 ```
 
-**2) Get the latest updates from the feature branch:**
+**2️⃣ Get the latest updates from the feature branch:**
 
 ```bash
 git checkout feature4
 git pull origin feature4
 ```
 
-**3) Merge `main` into the feature branch (`feature4`):**
+**3️⃣ Merge `main` into the feature branch (`feature4`):**
 
 Notice the direction of the merge: we want the merge commit to stay on the feature branch so our teammates can review it.
 
@@ -384,12 +409,33 @@ git checkout feature4
 git merge main
 ```
 
-**4) Push the resolved feature branch to GitHub:**
+**4️⃣ Push the resolved feature branch to GitHub:**
 
 ```bash
 git push origin feature4
 ```
 
 Now the pull request should be ready to merge again.
-#   G i t - G i t h u b  
- 
+
+---
+
+<div align="center">
+
+## 📚 Resources
+
+📹 **[Watch the Full Tutorial](https://www.youtube.com/watch?v=hrTQipWp6co)**  
+👨‍💻 **Created by [supersimple.dev](https://supersimple.dev)**
+
+---
+
+### 🌟 Found this helpful? Star this repo!
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
+  <img src="https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white" />
+</p>
+
+Made with ❤️ by following supersimple.dev's Git tutorial
+
+</div>
