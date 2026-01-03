@@ -2,9 +2,7 @@
 
 # 🚀 Git - 0 to Pro Reference
 
-[![Tutorial](https://img.shields.io/badge/YouTube-Tutorial-red?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=hrTQipWp6co)
-[![Author](https://img.shields.io/badge/By-supersimple.dev-blue?style=for-the-badge)](https://supersimple.dev)
-[![Git](https://img.shields.io/badge/Git-Reference-orange?style=for-the-badge&logo=git)](https://git-scm.com/)
+
 
 _A comprehensive guide to master Git from beginner to pro_
 
@@ -419,23 +417,6 @@ Now the pull request should be ready to merge again.
 
 ---
 
-<div align="center">
 
-## 📚 Resources
-
-📹 **[Watch the Full Tutorial](https://www.youtube.com/watch?v=hrTQipWp6co)**  
-👨‍💻 **Created by [supersimple.dev](https://supersimple.dev)**
-
----
-
-### 🌟 Found this helpful? Star this repo!
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
-  <img src="https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white" />
-</p>
-
-Made with ❤️ by following supersimple.dev's Git tutorial
 
 </div>
