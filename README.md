@@ -139,7 +139,7 @@ Tell git which files/folders it SHOULD NOT track.
 ### 🗑️ Remove Git from Project
 
 ```bash
-rm -rf .git
+rm -r -force .git
 ```
 
 ---
